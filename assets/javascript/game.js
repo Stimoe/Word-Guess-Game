@@ -54,7 +54,7 @@ notInArray=false
   //check if they won
      if (stringSpaces===computerNewWord){
       wins++
-      winsEL.textContent=wins
+      winsEL.textContent+=wins
       alert("you won!!")
       gameReset()
      } 
@@ -73,7 +73,7 @@ notInArray=false
       if (lives<=0) {
         alert ("you Lost! the animal was " + computerNewWord)
         losses++
-        lossesEL.textContent=losses
+        lossesEL.textContent+=losses
         gameReset()
       }
   }
