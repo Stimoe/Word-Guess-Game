@@ -23,7 +23,7 @@ function gameReset(){
  computerNewWord = computerChoices[Math.floor(Math.random() * computerChoices.length)];
  spaces =[]
  guesses =[]
- lives=12
+ lives=9
  guessesLeftEL.textContent=lives 
  wrongGuessesEL.textContent=guesses
  wordEL.textContent=spaces
@@ -71,7 +71,7 @@ notInArray=false
       guessesLeftEL.textContent=lives  
       // check if they lost
       if (lives<=0) {
-        alert ("you Lost!")
+        alert ("you Lost! the animal was " + computerNewWord)
         losses++
         lossesEL.textContent=losses
         gameReset()
